@@ -19,3 +19,20 @@ This module created the following resources
 * VPC peering with default VPC
 * created public Route in public Route table of Created VPC to default VPC (default VPC cidr, peering connection)
 * created Route in Default Main Route table to created VPC (created VPC cidr, peering connection)
+
+# inputs
+
+* vpc_cidr (required) user must supply the CIDR to VPC
+* project_name (required) user must supply the project_name to VPC
+* environment (required) user must supply the environment to VPC
+* public_subnets_cidrs (required) user must supply the public_subnets_cidrs to VPC
+* private_subnets_cidrs (required) user must supply the private_subnets_cidrs to VPC
+* database_subnets_cidrs (required) user must supply the database_subnets_cidrs to VPC
+
+# outputs
+
+* vpc_id  - VPC id is created
+* public_subnet_ids  - public subnet ids are created
+* private  - private subnet ids are created
+* database  - database subnet ids are created
+
